@@ -1,6 +1,6 @@
 // Initialize the Kaboom context.
 kaboom({
-    width: 800,
+    width: 1200,
     height: 600,
     background: [0, 100, 200],
 });
