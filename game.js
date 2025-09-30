@@ -1,15 +1,20 @@
 // Initialize the Kaboom context.
+//import random
+
+
 kaboom({
     width: 1200,
     height: 600,
     background: [0, 100, 200],
 });
 
+//import random
+
 // Set the global gravity value for all physics objects.
 setGravity(800);
 
 // --- Load Assets ---
-loadSprite("apple", "https://kaboomjs.com/sprites/apple.png");
+loadSprite("apple", "assets/IMG_8524 (1).jpg");
 loadSprite("enemy", "https://kaboomjs.com/sprites/gigagantrum.png");
 loadSprite("coin", "assets/IMG_9587 (1).jpg");
 loadSprite("door", "https://kaboomjs.com/sprites/door.png");
@@ -124,8 +129,8 @@ scene("main", ({ level } = { level: 0 }) => {
     //--Coin Collecting Logic--
     player.onCollide("coin", (coin) =>{
         destroy(coin);
-        score+= 10;
-        scoreLabel.text ="Score: " + score;
+        score+= Math.random();// * (max - min + 1)) + min);
+        scoreLabel.text ="Kalebs: " + score;
 
     });
 
