@@ -11,7 +11,7 @@ setGravity(800);
 // --- Load Assets ---
 loadSprite("apple", "https://kaboomjs.com/sprites/apple.png");
 loadSprite("enemy", "https://kaboomjs.com/sprites/gigagantrum.png");
-loadSprite("coin", "assets/fincs.jpg");
+loadSprite("coin", "assets/IMG_9587 (1).jpg");
 loadSprite("door", "https://kaboomjs.com/sprites/door.png");
 
 // --- Define Custom Components ---
