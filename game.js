@@ -13,7 +13,8 @@ loadSprite("apple", "https://kaboomjs.com/sprites/apple.png");
 loadSprite("enemy", "https://kaboomjs.com/sprites/gigagantrum.png");
 loadSprite("coin", "assets/IMG_9587 (1).jpg");
 loadSprite("door", "https://kaboomjs.com/sprites/door.png");
-
+loadSound("backgroundMusic", "music/freebird.mp3");
+const music = play("backgroundMusic", { loop: true });
 // --- Define Custom Components ---
 // By defining patrol() here, it's globally available and can be used by any scene.
 function patrol() {
